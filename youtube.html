@@ -1,190 +1,155 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
     <title>YouTube clone</title>
-
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-
-    <style>
-        p {
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-        }
-
-        .vtitle {
-            margin-top: 0px;
-            font-size: 14px;
-            ;
-        }
-
-
-
-        .thumbnail {
-            width: 300px;
-            height: auto;
-            display: block;
-        }
-
-        .searchbox {
-            font-size: 15px;
-            display: block;
-        }
-
-        .diva {
-            width: 300px;
-            height: 400px;
-            margin: 10px;
-            padding: 10px;
-            display: inline-block;
-            vertical-align: top;
-        }
-
-        .channelpic {
-
-            width: 50px;
-            display: inline-block;
-
-
-        }
-
-        .profilepic {
-            width: 100%;
-            border-radius: 40px;
-
-        }
-
-        .channelinfo {
-            display: inline-block;
-            width: 200px;
-            vertical-align: top;
-            margin-left: 10px;
-            font-family: Roboto, sans-serif;
-
-        }
-
-        .otherthanthumbnail {
-            margin-top: 12px;
-        }
-
-        .vauthor {
-            color: gray;
-            font-size: 12px;
-            margin-top: 0px;
-            margin-bottom: 2px;
-        }
-
-        .vstats {
-            color: gray;
-            font-size: 12px;
-            margin-top: 0px;
-
-        }
-    </style>
+    <link rel="stylesheet" href="youtube.css">
 </head>
 
 <body>
-    <input class="searchbox" type="text" placeholder="Search">
-
-    <div class="diva">
-        <div><img class="thumbnail" src="thumbnail-1.webp"></div>
-        <div class="otherthanthumbnail">
-            <div class="channelpic"><img class="profilepic" src="channel-1.jpeg"></div>
-            <div class="channelinfo">
-                <p class="vtitle">Talking Tech and AI with Google CEO Sundar Pichai!</p>
-                <p class="vauthor">Marques Brownlee</p>
-                <p class="vstats">3.4M views • 6 months ago</p>
-            </div>
-        </div>
-
+    <div class="header-bar">
+        <img class="logo" src="youtube-logo.svg" alt="YouTube Logo">
+        <input class="searchbox" type="text" placeholder="Search">
     </div>
-    <div class="diva">
-        <div><img class="thumbnail" src="thumbnail-2.webp"></div>
-        <div class="otherthanthumbnail">
-            <div class="channelpic"><img class="profilepic" src="channel-2.jpeg"></div>
-            <div class="channelinfo">
-                <p class="vtitle">
-                    Try Not To Laugh Challenge #9
-
-
-
-                </p>
-                <p class="vauthor">Markiplier</p>
-                <p class="vstats">19M views · 4 years ago</p>
-            </div>
-        </div>
-
-    </div>
-
-    <div class="diva">
-        <div><img class="thumbnail" src="thumbnail-3.webp"></div>
-        <div class="otherthanthumbnail">
-            <div class="channelpic"><img class="profilepic" src="channel-3.jpeg"></div>
-            <div class="channelinfo">
-                <p class="vtitle">
-                    Crazy Tik Toks Taken Moments Before DISASTER
-
-
-
-                </p>
-                <p class="vauthor">SSSniperWolf</p>
-                <p class="vstats">12M views · 1 year ago!</p>
-            </div>
-        </div>
-
-    </div>
-    <div class="diva">
-        <div><img class="thumbnail" src="thumbnail-4.webp"></div>
-        <div class="otherthanthumbnail">
-            <div class="channelpic"><img class="profilepic" src="channel-4.jpeg"></div>
-            <div class="channelinfo">
-                <p class="vtitle">
-                    The Simplest Math Problem No One Can Solve - Collatz Conjecture
-
-
-
-                </p>
-                <p class="vauthor">Veritasium</p>
-                <p class="vstats">18M views · 4 months ago</p>
-            </div>
-        </div>
-
+    <div class="videos-container">
         <div class="diva">
-            <div><img class="thumbnail" src="thumbnail-5.webp"></div>
+            <div><img class="thumbnail" src="pics/thumbnail-1.webp"></div>
             <div class="otherthanthumbnail">
-                <div class="channelpic"><img class="profilepic" src="channel-5.jpeg"></div>
+                <div class="channelpic"><img class="profilepic" src="pics/channel-1.jpeg"></div>
                 <div class="channelinfo">
-                    <p class="vtitle">
-                        Kadane's Algorithm to Maximum Sum Subarray Problem
-
-
-
-                    </p>
+                    <p class="vtitle">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+                    <p class="vauthor">Marques Brownlee</p>
+                    <p class="vstats">3.4M views • 6 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-2.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-2.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">Try Not To Laugh Challenge #9</p>
+                    <p class="vauthor">Markiplier</p>
+                    <p class="vstats">19M views · 4 years ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-3.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-3.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">Crazy Tik Toks Taken Moments Before DISASTER</p>
+                    <p class="vauthor">SSSniperWolf</p>
+                    <p class="vstats">12M views · 1 year ago!</p>
+                </div>
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-4.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-4.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">The Simplest Math Problem No One Can Solve - Collatz Conjecture</p>
+                    <p class="vauthor">Veritasium</p>
+                    <p class="vstats">18M views · 4 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-5.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-5.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">Kadane's Algorithm to Maximum Sum Subarray Problem</p>
                     <p class="vauthor">CS Dojo</p>
                     <p class="vstats">519K views · 5 years ago</p>
                 </div>
             </div>
-            <div class="diva">
-                <div><img class="thumbnail" src="thumbnail-6.webp"></div>
-                <div class="otherthanthumbnail">
-                    <div class="channelpic"><img class="profilepic" src="channel-6.jpeg"></div>
-                    <div class="channelinfo">
-                        <p class="vtitle">
-                            Anything You Can Fit In The Circle I’ll Pay For
-
-
-
-                        </p>
-                        <p class="vauthor">MrBeast</p>
-                        <p class="vstats">141M views · 1 year ago</p>
-                    </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-6.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-6.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">Anything You Can Fit In The Circle I’ll Pay For</p>
+                    <p class="vauthor">MrBeast</p>
+                    <p class="vstats">141M views · 1 year ago</p>
                 </div>
-
-
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-7.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-7.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">Why Planes Don't Fly Over Tibet</p>
+                    <p class="vauthor">RealLifeLore</p>
+                    <p class="vstats">6.6M views · 1 year ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-8.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-8.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">Inside The World's Biggest Passenger Plane</p>
+                    <p class="vauthor">Tech Vision</p>
+                    <p class="vstats">3.7M views · 10 months ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-9.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-9.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">The SECRET to Super Human STRENGTH</p>
+                    <p class="vauthor">ThenX</p>
+                    <p class="vstats">20M views · 3 year ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-10.avif"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-10.jpg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">the day Lionel Messi entirely destroyed Real Madrid - La Liga 2017 (500th goal)
+                    </p>
+                    <p class="vauthor">FrostPitch</p>
+                    <p class="vstats">1M views · 2 weeks ago </p>
+                </div>
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-11.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-11.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">How The World's Largest Cruise Ship Makes 30,000 Meals Every Day</p>
+                    <p class="vauthor">Business Insider</p>
+                    <p class="vstats">14M views · 1 year ago</p>
+                </div>
+            </div>
+        </div>
+        <div class="diva">
+            <div><img class="thumbnail" src="pics/thumbnail-12.webp"></div>
+            <div class="otherthanthumbnail">
+                <div class="channelpic"><img class="profilepic" src="pics/channel-12.jpeg"></div>
+                <div class="channelinfo">
+                    <p class="vtitle">Dubai's Crazy Underwater Train and Other Things #Only in Dubai</p>
+                    <p class="vauthor">Destination Tips</p>
+                    <p class="vstats">3M views · 1 year ago</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 
 </html>
